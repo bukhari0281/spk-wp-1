@@ -1,10 +1,10 @@
 <div id="ranking">
-	
+
 	{{-- tabel data alternatif --}}
 	<div class="container mx-auto px-4 sm:px-8">
 		<div class="py-8">
 			<div class="flex items-center justify-between">
-				<h2 class="text-2xl font-semibold leading-tight">Hasil Perankingan</h2>
+				<h2 class="text-2xl font-semibold leading-tight text-white">Hasil Perankingan</h2>
 				<x-jet-button class="button" wire:click="print">Cetak</x-jet-button>
 			</div>
 			<p>Data berikut diurutkan berdasarkan nilai tertinggi.</p>
@@ -30,7 +30,7 @@
 						<tbody>
 							@php $no = 1 @endphp
 							@forelse ($alternatifs->sortByDesc('nilai') as $index => $alt)
-							
+
 							<tr>
 								<td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
 									{{ $no++ }}
@@ -44,7 +44,7 @@
 								<td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
 									{{ $alt->nilai }}
 								</td>
-								
+
 							</tr>
 
 							@empty
@@ -52,7 +52,7 @@
 							<tr>
 								<td class="px-5 py-5 border-b border-gray-200 bg-white text-sm" colspan="{{ $kriterias->count() + 4 }}">Belum ada data alternatif.</td>
 							</tr>
-							
+
 							@endforelse
 						</tbody>
 					</table>

@@ -1,4 +1,4 @@
-<nav x-data="{ open: false }" class="bg-gray-800">
+<nav x-data="{ open: false }" class="bg-gray-900">
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
@@ -52,9 +52,9 @@
                 @if (Laravel\Jetstream\Jetstream::hasTeamFeatures())
                     <div class="ml-3 relative">
                         <x-jet-dropdown align="right" width="60">
-                            <x-slot name="trigger">
-                                <span class="inline-flex rounded-md">
-                                    <button type="button" class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-gray-900 hover:bg-gray-50 hover:text-gray-700 focus:outline-none focus:bg-gray-500 active:bg-gray-500 transition">
+                            <x-slot name="trigger bg-gray-900">
+                                <span class="inline-flex rounded-md bg-gray-900">
+                                    <button type="button" class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-gray-900 hover:bg-gray-800 hover:text-gray-700 focus:outline-none focus:bg-gray-800 active:bg-gray-800 transition">
                                         {{ Auth::user()->currentTeam->name }}
 
                                         <svg class="ml-2 -mr-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
