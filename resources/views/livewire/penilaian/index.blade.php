@@ -31,7 +31,6 @@
 						</thead>
 						<tbody>
 							@forelse ($alternatifs as $index => $alt)
-
 							<tr>
 								<td class="px-5 py-5 border-b border-gray-700 bg-gray-600 text-gray-300 text-sm">
 									{{ $index + 1 }}
