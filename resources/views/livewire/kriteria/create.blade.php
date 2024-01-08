@@ -69,7 +69,7 @@
             <div class="col-span-6 sm:col-span-4">
                 <label for="name" class="block text-white">Nama Kriteria</label>
                 <input id="name" wire:model="nama" type="text" class="mt-1 block w-full rounded-lg bg-slate-500 text-gray-100" />
-                @error('nama')
+                @error('kode')
                     <p class="text-red-500 mt-2">{{ $message }}</p>
                 @enderror
             </div>

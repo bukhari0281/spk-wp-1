@@ -12,7 +12,7 @@
 					<table class="min-w-full leading-normal">
 						<thead>
 							<tr>
-								<th class="px-5 py-3 border-b-2 border-gray-700 bg-gray-900  text-center text-xs font-semibold text-gray-300 uppercase tracking-wider">
+								<th class="px-5 py-3 border-b-2 border-gray-700 bg-gray-900  text-xs font-semibold text-gray-300 uppercase tracking-wider">
 									No
 								</th>
 								<th class="px-5 py-3 border-b-2 border-gray-700 bg-gray-900  text-center text-xs font-semibold text-gray-300 uppercase tracking-wider">
@@ -22,23 +22,23 @@
 									Nama
 								</th>
 								@foreach ($kriterias as $krit)
-								<th class="px-5 py-3 border-b-2 border-gray-700 bg-gray-900  text-center text-xs font-semibold text-gray-300 uppercase tracking-wider">
+								<th class="px-5 py-3 border-b-2 border-gray-700 bg-gray-900  text-xs font-semibold text-gray-300 uppercase tracking-wider">
 									{{ $krit->kode }}
 								</th>
 								@endforeach
-								<th class="px-5 py-3 border-b-2 border-gray-700 bg-gray-900  text-center text-xs font-semibold text-gray-300 uppercase tracking-wider"></th>
+								<th class="px-5 py-3 border-b-2 border-gray-700 bg-gray-900   text-xs font-semibold text-gray-300 uppercase tracking-wider"></th>
 							</tr>
 						</thead>
 						<tbody>
 							@forelse ($alternatifs as $index => $alt)
 							<tr>
-								<td class="px-5 py-5 border-b border-gray-700 bg-gray-600 text-gray-300 text-sm">
+								<td class="px-5 py-5 border-b border-gray-700 bg-gray-600 text-gray-300 text-sm  text-center">
 									{{ $index + 1 }}
 								</td>
-								<td class="px-5 py-5 border-b border-gray-700 bg-gray-600 text-gray-300 text-sm">
+								<td class="px-5 py-5 border-b border-gray-700 bg-gray-600 text-gray-300 text-sm text-center">
 									{{ $alt->kode }}
 								</td>
-								<td class="px-5 py-5 border-b border-gray-700 bg-gray-600 text-gray-300 text-sm">
+								<td class="px-5 py-5 border-b border-gray-700 bg-gray-600 text-gray-300 text-sm text-center">
 									{{ $alt->name }}
 								</td>
 								@php
@@ -50,7 +50,7 @@
 								@endphp
 
 								@foreach ($nilai as $n)
-								<td class="px-5 py-5 border-b border-gray-700 bg-gray-600 text-gray-300 text-sm">
+								<td class="px-5 py-5 border-b border-gray-700 bg-gray-600 text-gray-300 text-sm text-center">
 									{{ $n }}
 								</td>
 								@endforeach

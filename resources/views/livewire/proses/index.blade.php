@@ -32,16 +32,16 @@
 							@forelse ($alternatifs->sortByDesc('nilai') as $index => $alt)
 
 							<tr>
-								<td class="px-5 py-5 border-b border-gray-700 text-gray-300 bg-gray-600 text-sm">
+								<td class="px-5 py-5 border-b border-gray-700 text-gray-300 bg-gray-600 text-sm text-center">
 									{{ $no++ }}
 								</td>
-								<td class="px-5 py-5 border-b border-gray-700 text-gray-300 bg-gray-600 text-sm">
+								<td class="px-5 py-5 border-b border-gray-700 text-gray-300 bg-gray-600 text-sm text-center">
 									{{ $alt->kode }}
 								</td>
-								<td class="px-5 py-5 border-b border-gray-700 text-gray-300 bg-gray-600 text-sm">
+								<td class="px-5 py-5 border-b border-gray-700 text-gray-300 bg-gray-600 text-sm text-center">
 									{{ $alt->name }}
 								</td>
-								<td class="px-5 py-5 border-b border-gray-700 text-gray-300 bg-gray-600 text-sm">
+								<td class="px-5 py-5 border-b border-gray-700 text-gray-300 bg-gray-600 text-sm text-center">
 									{{ $alt->nilai }}
 								</td>
 
