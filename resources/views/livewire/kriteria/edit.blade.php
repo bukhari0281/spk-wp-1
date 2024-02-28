@@ -8,7 +8,7 @@
 			Ubah data kriteria penilaian beserta bobotnya.
 		</x-slot>
 		
-		<x-slot name="form">
+		<x-slot name="form"> 
 			{{-- input kode --}}
 			<div class="col-span-6 sm:col-span-4">
 				<x-jet-label for="kode" value="Kode Kriteria" />
@@ -124,6 +124,5 @@
 		<option value="1">Benefit</option>
 		<option value="0">Cost</option>
 	</select>
- 
     <button type="submit">Save</button>
 </form> -->
